@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <h1>Seller Details</h1>
+    <div class="container">
+      <form novalidate>
+        <div
+          class="inline"
+          style="display: flex; justify-content: space-between"
+        >
+          <div class="row" style="margin-right: 3px">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="firstname" class="form-field__label"
+                    >Company Name</label
+                  >
+                  <input id="firstname" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="Firstname" class="form-field__label"
+                    >GST.No</label
+                  >
+                  <input id="Firstname" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="Address" class="form-field__label">Address</label>
+                <input id="Address" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="email" class="form-field__label">Email</label>
+                <input id="email" type="email" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="zip" class="form-field__label">Zip code</label>
+                <input id="zip" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="Invoice" class="form-field__label"
+                  >Invoice Number</label
+                >
+                <input id="Invoice" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="city" class="form-field__label">Phone Number</label>
+                <input id="city" type="tel" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="additionalInfo" class="form-field__label"
+                  >Additional info</label
+                >
+                <textarea
+                  id="additionalInfo"
+                  class="form-field__textarea"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <h1>Buyer Details</h1>
+    <div class="container">
+      <form novalidate>
+        <div
+          class="inline"
+          style="display: flex; justify-content: space-between"
+        >
+          <div class="row" style="margin-right: 3px">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="bfirstname" class="form-field__label"
+                    >Company Name</label
+                  >
+                  <input
+                    id="bfirstname"
+                    type="text"
+                    class="form-field__input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="gfirstname" class="form-field__label"
+                    >GST.No</label
+                  >
+                  <input
+                    id="gfirstname"
+                    type="text"
+                    class="form-field__input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="afirstname" class="form-field__label"
+                  >Address</label
+                >
+                <input id="afirstname" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="bemail" class="form-field__label">Email</label>
+                <input id="bemail" type="email" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="bzip" class="form-field__label">Zip code</label>
+                <input id="bzip" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="bInvoice" class="form-field__label"
+                  >Invoice Number</label
+                >
+                <input id="bInvoice" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="bcity" class="form-field__label"
+                  >Phone Number</label
+                >
+                <input id="bcity" type="tel" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="add">
+      <div class="additem"></div>
+      <h1>Items</h1>
+      <div class="ttable">
+        <div class="trow header green">
+          <div class="tcell">QUANTITY</div>
+          <div class="tcell">ITEM DISCRIPTION</div>
+          <div class="tcell">BATCH</div>
+          <div class="tcell">EXP</div>
+          <div class="tcell">HSN</div>
+          <div class="tcell">M.R.P</div>
+          <div class="tcell">RATE</div>
+          <div class="tcell">AMOUNT</div>
+          <div class="tcell">GST</div>
+        </div>
+      </div>
+
+      <div class="button">
+        <button onclick="addItem()">
+          Add
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+          <span class="fourth"></span>
+        </button>
+        <button onclick="toggleEdit()">
+          Edit
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+          <span class="fourth"></span>
+        </button>
+      </div>
+      <button onclick="s()" style="margin: 30px 30px">
+        Generate PDF
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+        <span class="fourth"></span>
+      </button>
+    </div>
+    <div id="invoice" style="display: none;border: 2px green;">
+      <div class="header">
+        <div class="container">
+          <h1>Seller Details</h1>
+          <div id="sellerDetails">
+            <!-- Seller details will be displayed here -->
+          </div>
+        </div>
+
+        <div class="container">
+          <h1>Buyer Details</h1>
+          <div id="buyerDetails">
+            <!-- Buyer details will be displayed here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <h1>Items</h1> -->
+      <div class="container">
+        <div id="items" style="max-height: 1000px; height:auto">
+          <!-- Item details will be displayed here -->
+        </div>
+      </div>
+      <div id="footer" style="padding-top: 100px;">
+      </div>
+
+      <button style="margin: 30px 30px ;width: auto;" class="btn-download">
+        Download
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+        <span class="fourth"></span>
+      </button>
+    <script src="./input.js"></script>
+    <script src="./js/jspdf.debug.js"></script>
+    <script src="./js/html2canvas.min.js"></script>
+    <script src="./js/html2pdf.min.js"></script>
+    <script>
+
+      
+const options = {
+      margin: 0.5,
+      filename: 'invoice.pdf',
+      image: { 
+        type: 'jpeg', 
+        quality: 500
+      },
+      html2canvas: { 
+        scale: 1 
+      },
+      jsPDF: { 
+        unit: 'in', 
+        format: 'letter', 
+        orientation: 'portrait' 
+      }
+    }
+    
+    $('.btn-download').click(function(e){
+      e.preventDefault();
+      const element = document.getElementById('invoice');
+      html2pdf().from(element).set(options).save();
+    });
+
+
+    function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+      </script>
+  
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>billIt</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .customFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:stretch;
+    padding: 2vw 5vw;
+    color: #3F2305;
+    background-image: url("./assets/images/foot.svg");
+}
+
+.footerLogo{
+    /* margin-top: 5vw; */
+    min-width: 420px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:flex-start;
+}
+
+.content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+hr{
+    border-top: 1px;
+    border-color:grey;
+    width: 100%;
+}
+
+.links{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links > i{
+    cursor: pointer;
+    font-size: large;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 30px;
+    padding: 6px;
+    border-radius: 6px;
+
+}
+
+.dev{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.devInfo{
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.devInfo:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .content1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLogo{
+        margin: auto;
+        margin-top: 5vw;
+    }
+   
+
+    /* .footerLogo{
+        align-items: center;
+        justify-content: center;
+    }     */
+}
+
+@media screen and (max-width:600px) {
+    .footerLogo{
+        padding:10px;
+        min-width: 90%;
+        margin: 30px;
+        width: 90%;
+    }   
+    .txt{
+        text-align: center;
+    } 
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">billIt!</h2>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a onclick="scrollToForm()">Services</a>
+        <!-- <a  onclick="scrollToForm()">About</a> -->
+        <a onclick="scrollToForm()">Contact</a>
+      </nav>
+    </header>
+
+    <section class="parallax">
+      <h2 id="text" onclick="redirectToInputPage()">Bill here</h2>
+      <img src="./assets/images/b3.svg" alt="background-image" />
+      <img src="./assets/images/b2.svg" alt="background-image" />
+      <img src="./assets/images/b1.svg" alt="background-image" />
+    </section>
+
+    <!-- Input Section -->
+    <section class="list">
+      <h2 class="services">Servies</h2>
+      <ol style="--length: 5" role="list">
+        <li style="--i: 1">
+          <h3>Discovery and assessment</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+        </li>
+        <li style="--i: 2">
+          <h3>Information gathering and analysis</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+        </li>
+        <li style="--i: 3">
+          <h3>Creating your claim</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+        </li>
+        <li style="--i: 4">
+          <h3>Approvals and submission</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+        </li>
+        <li style="--i: 5">
+          <h3>Receiving your benefit</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+        </li>
+      </ol>
+    </section>
+    <section>
+      
+    </section>
+    
+    <!-- <div class="footer">
+      <h2 class="abt">About</h2>
+      <div id="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+          deserunt ipsam atque animi cupiditate, nostrum excepturi corporis,
+          perspiciatis laudantium molestiae eligendi vero odit incidunt quod
+          adipisci distinctio eum amet facere.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+          debitis molestias, optio nesciunt tenetur molestiae nihil, voluptatum
+          porro aut modi unde officia totam! Quia, necessitatibus nihil corrupti
+          consequatur veniam tenetur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum
+          quidem corrupti ipsam eveniet sed voluptates, tempora ipsa repellat
+          ut. Debitis fugit eius accusantium placeat nesciunt sed odit eum ea.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+          deserunt ipsam atque animi cupiditate, nostrum excepturi corporis,
+          perspiciatis laudantium molestiae eligendi vero odit incidunt quod
+          adipisci distinctio eum amet facere.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+          debitis molestias, optio nesciunt tenetur molestiae nihil, voluptatum
+          porro aut modi unde officia totam! Quia, necessitatibus nihil corrupti
+          consequatur veniam tenetur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum
+          quidem corrupti ipsam eveniet sed voluptates, tempora ipsa repellat
+          ut. Debitis fugit eius accusantium placeat nesciunt sed odit eum ea.
+        </p>
+      </div>
+    </div> -->
+
+    <section class="last">
+      <footer class='customFooter'>
+
+        <div class="content1">
+            <div class='footerLogo'>
+                <!-- <img src="/VBIT_LOGO_WHITE.png" height={60} width={300} /> -->
+                <span >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, totam accusamus? Fugit, quis rem saepe vitae maiores cum tempora nemo doloribus veritatis ipsam. Eaque ut corporis modi unde officia at!</span>
+            </div>            
+        </div>
+
+        <hr/>
+
+        <div class="content1">
+            <p class='txt'>Copyright ©2024 Vasavi College of Engineering All Rights Reserved</p>
+            <div class='links'>
+                <span>Follow us on</span>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-link"></i>
+            </div>
+        </div>
+
+        <div class='dev'>               
+            <a class='devInfo' target="_blank"  href="#">billIt
+            </a>
+        </div>
+        <script
+        src="https://kit.fontawesome.com/f980520904.js"
+        crossorigin="anonymous"
+      ></script>
+    </footer>
+    </section>
+    <script src="./script.js">
+    </script>
+  </body>
+</html>
